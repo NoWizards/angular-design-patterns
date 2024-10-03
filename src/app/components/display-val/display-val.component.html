@@ -1,0 +1,18 @@
+<a [routerLink]="['/lazy']">navigate to lazy</a>
+<p>display-val works! where it has been imported?</p>
+<p>value from singleton service: {{singleService.initValue}}</p>
+<p>value from any service: {{anyService.initValue}}</p>
+<div style="margin-left: 150px">
+    <app-custom-child></app-custom-child>
+
+</div>
+
+<button (click)="increaseValue()">Increase one singleton</button>
+<button (click)="increaseAnyValue()" style="margin-left: 12px;">Increase one any</button>
+
+
+<app-default>
+    
+</app-default>
+
+
